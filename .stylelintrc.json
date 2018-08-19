@@ -36,6 +36,6 @@
     "no-missing-end-of-source-newline": null,
     "no-duplicate-selectors": true,
     "selector-max-specificity": "0,4,0",
-    "unit-whitelist": ["em", "rems", "px", "fr", "%", "vh"]
+    "unit-whitelist": ["em", "rem", "px", "fr", "%", "vh", "s", "ms"]
   }
 }
