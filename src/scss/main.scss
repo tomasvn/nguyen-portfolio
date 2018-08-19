@@ -1,9 +1,9 @@
-@import "settings/variables";
+@import "settings.variables";
 
-@import "global/normalize";
+@import "global.normalize";
 
-@import "global/global";
+@import "global.general";
 
-@import "objects/wrappers";
+@import "objects.wrappers";
 
-@import "components/menu";
+@import "components.menu";

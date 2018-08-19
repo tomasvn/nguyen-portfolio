@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: $g-font-size;
+  font-size: $global-font-size;
 }
 
 *,
@@ -23,4 +23,12 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
 }

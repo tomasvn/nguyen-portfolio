@@ -347,10 +347,18 @@ a {
   color: inherit;
 }
 
+button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+}
+
 .o-nav-wrapper {
   position: fixed;
   width: 120px;
-  padding: 0 20px;
+  padding: 15px;
 }
 
 .o-flex-column {
@@ -364,13 +372,29 @@ a {
 }
 
 .c-side-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 12rem;
   height: 100vh;
-  border-right: 2px solid #fdeB37;
+  padding: 15px;
+  border-right: 2px solid #fdeb37;
+  text-align: center;
+  transition: ease-in 0.3s transform;
 }
 
 .c-side-menu__bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.c-side-menu--is-open .c-side-menu {
+  transform: translateX(20rem);
+}
+
+.c-menu-list__item {
+  color: #fff;
 }

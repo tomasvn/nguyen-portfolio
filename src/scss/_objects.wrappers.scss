@@ -5,7 +5,7 @@
 .o-nav-wrapper {
   position: fixed;
   width: 120px;
-  padding: 0 ($g-sizing * 2);
+  padding: ($global-sizing * 1.5);
 }
 
 .o-flex-column {
