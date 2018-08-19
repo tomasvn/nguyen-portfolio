@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-size: $g-font-size;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: inherit;
+  background-color: $blue;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

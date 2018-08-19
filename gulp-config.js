@@ -2,7 +2,7 @@ module.exports = {
   paths: {
     src: {
       imgFiles: './src/images/*.+(png|jpg|gif|svg)',
-      stylesFiles: './src/scss/*.scss',
+      stylesFiles: 'src/scss/main.scss',
       stylesOutput: './src/styles',
       htmlFiles: './src/*.html',
       jsFiles: '.src/js/*.js',

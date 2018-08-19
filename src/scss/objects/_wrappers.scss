@@ -1,0 +1,19 @@
+//===============
+//== #WRAPPERS ==
+//===============
+
+.o-nav-wrapper {
+  position: fixed;
+  width: 120px;
+  padding: 0 ($g-sizing * 2);
+}
+
+.o-flex-column {
+  display: flex;
+  flex-direction: row;
+
+  &--center-all {
+    align-items: center;
+    justify-content: center;
+  }
+}

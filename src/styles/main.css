@@ -319,3 +319,58 @@ template {
 [hidden] {
   display: none;
 }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: inherit;
+  background-color: #051937;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.o-nav-wrapper {
+  position: fixed;
+  width: 120px;
+  padding: 0 20px;
+}
+
+.o-flex-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.o-flex-column--center-all {
+  align-items: center;
+  justify-content: center;
+}
+
+.c-side-menu {
+  height: 100vh;
+  border-right: 2px solid #fdeB37;
+}
+
+.c-side-menu__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
