@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp watch",
-    "lint:css": "stylelint ./src/**/*.scss  || true",
-    "lint:js": "standard ./src/**/*.js || true",
+    "lint:css": "stylelint ./src/**/*.scss",
+    "lint:js": "standard ./src/**/*.js",
     "lint:fix": "stylelint --fix ./src/**/*.scss && standard --fix ./src/**/*.js",
     "build": "gulp build",
     "dev:clean": "gulp clean:dev",
