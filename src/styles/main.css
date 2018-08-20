@@ -371,6 +371,13 @@ button {
   justify-content: center;
 }
 
+/* .o-layout {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: ($global-sizing * 4);
+  padding-right: ($global-sizing * 4);
+} */
 .c-side-menu {
   position: fixed;
   top: 0;
@@ -382,6 +389,11 @@ button {
   border-right: 2px solid #fdeb37;
   text-align: center;
   transition: ease-in 0.3s transform;
+  /* &--is-open {
+    .c-side-menu {
+      transform: translateX(20rem);
+    }
+  } */
 }
 
 .c-side-menu__bottom {
@@ -389,10 +401,6 @@ button {
   bottom: 15px;
   left: 50%;
   transform: translate(-50%, 0);
-}
-
-.c-side-menu--is-open .c-side-menu {
-  transform: translateX(20rem);
 }
 
 .c-menu-list__item {
