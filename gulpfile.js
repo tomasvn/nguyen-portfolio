@@ -51,6 +51,7 @@ gulp.task('watch', ['dev:styles'], function () {
   })
 
   gulp.watch(src.stylesFiles, ['dev:styles']) // Watch - it will run the styles task on file change
+  gulp.watch(src.jsFiles).on('change', browserSync.reload)
   gulp.watch(src.htmlFiles).on('change', browserSync.reload) // Watch changes in HTML file and reload it browser
 })
 

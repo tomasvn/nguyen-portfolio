@@ -3,10 +3,39 @@
 //===========
 
 .c-menu {
+  @include flex(center, null, column);
+
   border-right: 1px solid $yellow;
+  font-family: $axis;
+
+  &__title {
+    position: relative;
+    left: 15px;
+    font-size: 1.4rem;
+    writing-mode: tb;
+  }
 
   &__btn {
-    width: 36px;
-    height: 36px;
+    @include size(36px);
+
+    padding: 3px;
+  }
+}
+
+.menu-line {
+  display: block;
+  @include size(100%, 4px);
+
+  background-color: $blue;
+
+  &:nth-of-type(2) {
+    margin: ($global-sizing / 2) 0;
+  }
+}
+
+.c-menu-list {
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
   }
 }

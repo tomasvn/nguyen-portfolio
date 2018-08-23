@@ -321,6 +321,7 @@ template {
 }
 
 html {
+  min-height: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
 }
@@ -332,6 +333,8 @@ html {
 }
 
 body {
+  display: flex;
+  height: inherit;
   font-size: inherit;
 }
 
@@ -352,4 +355,59 @@ button {
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+
+.o-nav-wrapper {
+  height: 100vh;
+  padding: 5px;
+}
+
+.c-icon-logo .cls-1 {
+  fill: none;
+}
+
+.c-icon-logo .cls-2,
+.c-icon-logo .cls-3 {
+  stroke: none;
+}
+
+.c-icon-logo .cls-3 {
+  fill: #fdeb37;
+}
+
+.c-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #fdeb37;
+  font-family: Axis, sans-serif;
+}
+
+.c-menu__title {
+  position: relative;
+  left: 15px;
+  font-size: 1.4rem;
+  writing-mode: tb;
+}
+
+.c-menu__btn {
+  width: 36px;
+  height: 36px;
+  padding: 3px;
+}
+
+.menu-line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #051937;
+}
+
+.menu-line:nth-of-type(2) {
+  margin: 5px 0;
+}
+
+.c-menu-list.is-hidden {
+  visibility: hidden;
+  opacity: 0;
 }
