@@ -2,32 +2,11 @@
 //== #MENU ==
 //===========
 
-.c-side-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 12rem;
-  height: 100vh;
-  padding: ($global-sizing * 1.5);
-  border-right: 2px solid $yellow;
-  text-align: center;
-  transition: ease-in 0.3s transform;
+.c-menu {
+  border-right: 1px solid $yellow;
 
-  &__bottom {
-    position: absolute;
-    bottom: ($global-sizing * 1.5);
-    left: 50%;
-    transform: translate(-50%, 0);
+  &__btn {
+    width: 36px;
+    height: 36px;
   }
-
-  /* &--is-open {
-    .c-side-menu {
-      transform: translateX(20rem);
-    }
-  } */
-}
-
-.c-menu-list__item {
-  color: $white;
 }

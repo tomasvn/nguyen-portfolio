@@ -3,17 +3,6 @@
 //===============
 
 .o-nav-wrapper {
-  position: fixed;
-  width: 120px;
-  padding: ($global-sizing * 1.5);
-}
-
-.o-flex-column {
-  display: flex;
-  flex-direction: row;
-
-  &--center-all {
-    align-items: center;
-    justify-content: center;
-  }
+  height: 100vh;
+  padding: ($global-sizing / 2);
 }
