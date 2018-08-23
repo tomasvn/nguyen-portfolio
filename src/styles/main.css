@@ -333,7 +333,6 @@ html {
 
 body {
   font-size: inherit;
-  background-color: #051937;
 }
 
 ul {
@@ -351,58 +350,6 @@ button {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   border: 0;
-}
-
-.o-nav-wrapper {
-  position: fixed;
-  width: 120px;
-  padding: 15px;
-}
-
-.o-flex-column {
-  display: flex;
-  flex-direction: row;
-}
-
-.o-flex-column--center-all {
-  align-items: center;
-  justify-content: center;
-}
-
-/* .o-layout {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: ($global-sizing * 4);
-  padding-right: ($global-sizing * 4);
-} */
-.c-side-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 12rem;
-  height: 100vh;
-  padding: 15px;
-  border-right: 2px solid #fdeb37;
-  text-align: center;
-  transition: ease-in 0.3s transform;
-  /* &--is-open {
-    .c-side-menu {
-      transform: translateX(20rem);
-    }
-  } */
-}
-
-.c-side-menu__bottom {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.c-menu-list__item {
-  color: #fff;
+  cursor: pointer;
 }
