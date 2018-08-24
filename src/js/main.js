@@ -1,12 +1,16 @@
 const jsBtn = document.querySelector('.jsBtn')
+const jsClose = document.querySelector('.jsClose')
 const jsMenu = document.querySelector('.jsMenu')
 const body = document.body
 
 jsBtn.addEventListener('click', () => {
-  body.classList.toggle('c-menu--is-open')
-  if (body.classList.contains('c-menu--is-open')) {
-    jsMenu.classList.remove('is-hidden')
-  } else {
-    jsMenu.classList.add('is-hidden')
+  jsBtn.classList.toggle('is-active')
+  jsMenu.classList.toggle('is-open')
+})
+
+jsClose.addEventListener('click', () => {
+  jsMenu.classList.toggle('is-open')
+  if (jsMenu.classList.contains('is-open')) {
+    body.style.overflow = 'hidden'
   }
 })

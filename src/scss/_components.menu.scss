@@ -3,8 +3,8 @@
 //===========
 
 .c-menu {
-  @include flex(center, null, column);
-
+  position: relative;
+  padding: ($global-sizing / 2);
   border-right: 1px solid $yellow;
   font-family: $axis;
 
@@ -15,10 +15,13 @@
     writing-mode: tb;
   }
 
-  &__btn {
+  &__btn,
+  &__close {
     @include size(36px);
+  }
 
-    padding: 3px;
+  &__close {
+    margin-left: auto;
   }
 }
 
@@ -26,16 +29,45 @@
   display: block;
   @include size(100%, 4px);
 
-  background-color: $blue;
+  background-color: $yellow;
 
   &:nth-of-type(2) {
     margin: ($global-sizing / 2) 0;
   }
+
+  &--cross {
+    background-color: $blue;
+  }
 }
 
 .c-menu-list {
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
+  @include size(100vw, 100%);
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+  background-color: $yellow;
+  transition: ease-in-out 400ms transform;
+
+  &.is-open {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__item {
+    padding: $global-sizing;
+    font-size: 1.8rem;
+    color: $blue;
+
+    &--first {
+      @include flex(center, null, null, null);
+    }
+  }
+
+  .c-menu-inner-list {
+    margin-top: auto;
+    margin-bottom: ($global-sizing * 3);
   }
 }

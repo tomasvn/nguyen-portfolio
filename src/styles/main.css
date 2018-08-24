@@ -321,7 +321,6 @@ template {
 }
 
 html {
-  min-height: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
 }
@@ -334,8 +333,10 @@ html {
 
 body {
   display: flex;
-  height: inherit;
+  height: 100vh;
   font-size: inherit;
+  background-color: #051937;
+  color: #fff;
 }
 
 ul {
@@ -376,9 +377,8 @@ button {
 }
 
 .c-menu {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  position: relative;
+  padding: 5px;
   border-right: 1px solid #fdeb37;
   font-family: Axis, sans-serif;
 }
@@ -390,24 +390,59 @@ button {
   writing-mode: tb;
 }
 
-.c-menu__btn {
+.c-menu__btn, .c-menu__close {
   width: 36px;
   height: 36px;
-  padding: 3px;
+}
+
+.c-menu__close {
+  margin-left: auto;
 }
 
 .menu-line {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #051937;
+  background-color: #fdeb37;
 }
 
 .menu-line:nth-of-type(2) {
   margin: 5px 0;
 }
 
-.c-menu-list.is-hidden {
-  visibility: hidden;
-  opacity: 0;
+.menu-line--cross {
+  background-color: #051937;
+}
+
+.c-menu-list {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+  background-color: #fdeb37;
+  transition: ease-in-out 400ms transform;
+}
+
+.c-menu-list.is-open {
+  transform: translate3d(0, 0, 0);
+}
+
+.c-menu-list__item {
+  padding: 10px;
+  font-size: 1.8rem;
+  color: #051937;
+}
+
+.c-menu-list__item--first {
+  display: flex;
+  align-items: center;
+}
+
+.c-menu-list .c-menu-inner-list {
+  margin-top: auto;
+  margin-bottom: 30px;
 }
