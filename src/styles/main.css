@@ -363,40 +363,75 @@ button {
   padding: 5px;
 }
 
-.c-icon-logo .cls-1 {
-  fill: none;
-}
-
-.c-icon-logo .cls-2,
-.c-icon-logo .cls-3 {
-  stroke: none;
-}
-
-.c-icon-logo .cls-3 {
-  fill: #fdeb37;
-}
-
 .c-menu {
   position: relative;
-  padding: 5px;
+  padding: 10px;
   border-right: 1px solid #fdeb37;
   font-family: Axis, sans-serif;
 }
 
-.c-menu__title {
-  position: relative;
-  left: 15px;
-  font-size: 1.4rem;
-  writing-mode: tb;
-}
-
 .c-menu__btn, .c-menu__close {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
 }
 
 .c-menu__close {
   margin-left: auto;
+}
+
+.c-menu__close .menu-line {
+  background-color: #051937;
+}
+
+.c-menu__btn .menu-line--first,
+.c-menu__btn .menu-line--second,
+.c-menu__btn .menu-line--third {
+  transition-property: width;
+}
+
+.c-menu__btn .menu-line--first {
+  transition-duration: 480ms;
+}
+
+.c-menu__btn .menu-line--second {
+  transition-duration: 400ms;
+}
+
+.c-menu__btn .menu-line--third {
+  transition-duration: 200ms;
+}
+
+.c-menu__btn:hover .menu-line--first {
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 480ms;
+  width: 60%;
+}
+
+.c-menu__btn:hover .menu-line--second {
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 400ms;
+  width: 40%;
+}
+
+.c-menu__btn:hover .menu-line--third {
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 200ms;
+  width: 20%;
+}
+
+.c-menu__close .menu-line--first,
+.c-menu__close .menu-line--second,
+.c-menu__close .menu-line--third {
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 200ms all;
+}
+
+.c-menu__close:hover .menu-line--first {
+  transform: translate3d(0, 5px, 0);
+}
+
+.c-menu__close:hover .menu-line--second {
+  width: 0;
+}
+
+.c-menu__close:hover .menu-line--third {
+  transform: translate3d(0, -5px, 0);
 }
 
 .menu-line {
@@ -408,10 +443,6 @@ button {
 
 .menu-line:nth-of-type(2) {
   margin: 5px 0;
-}
-
-.menu-line--cross {
-  background-color: #051937;
 }
 
 .c-menu-list {
@@ -432,6 +463,8 @@ button {
 }
 
 .c-menu-list__item {
+  display: flex;
+  align-items: center;
   padding: 10px;
   font-size: 1.8rem;
   color: #051937;
@@ -445,4 +478,23 @@ button {
 .c-menu-list .c-menu-inner-list {
   margin-top: auto;
   margin-bottom: 30px;
+}
+
+.c-icon {
+  margin-left: auto;
+}
+
+.c-icon--resume {
+  width: 30px;
+  height: 42px;
+}
+
+.c-icon--linkedin, .c-icon--medium {
+  width: 32px;
+  height: 32px;
+}
+
+.c-icon--mail {
+  width: 36px;
+  height: 34px;
 }

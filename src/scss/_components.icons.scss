@@ -1,14 +1,16 @@
-.c-icon-logo {
-  .cls-1 {
-    fill: none;
+.c-icon {
+  margin-left: auto;
+
+  &--resume {
+    @include size(30px, 42px);
   }
 
-  .cls-2,
-  .cls-3 {
-    stroke: none;
+  &--linkedin,
+  &--medium {
+    @include size(32px, 32px);
   }
 
-  .cls-3 {
-    fill: $yellow;
+  &--mail {
+    @include size(36px, 34px);
   }
 }
