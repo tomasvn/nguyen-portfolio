@@ -17,3 +17,6 @@
 - [x] Restructure HTML
 - [x] Remove initial styling
 - [x] Update JS file for menu
+
+### v0.2
+- [ ] Implementing sidebar [WIP]
