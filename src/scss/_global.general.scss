@@ -11,11 +11,10 @@ html {
 
 body {
   display: flex;
-  height: 100vh;
-  font-size: inherit;
-  font-family: $playfair;
   background-color: $blue;
-  color: $white;
+  font-family: $playfair;
+  font-size: inherit;
+  line-height: 1.15;
 }
 
 ul {

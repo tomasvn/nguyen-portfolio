@@ -19,4 +19,10 @@
 
     margin-left: $global-sizing;
   }
+
+  &--arrow {
+    @include size(14px, 78px);
+
+    margin-left: 0;
+  }
 }

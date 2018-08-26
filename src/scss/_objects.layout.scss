@@ -11,10 +11,12 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.4;
 
-  &--small {
-    width: 80%;
+  &--medium {
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 ($global-sizing * 1.2);
   }
 }
