@@ -1,3 +1,20 @@
 //===============
 //== #HEADINGS ==
 //===============
+
+.u-main-heading {
+  font-family: $axis;
+  font-size: 2.5rem;
+  color: $yellow;
+  text-align: center;  
+  margin: 0;
+}
+
+.u-sub-title {
+  @include flex(center, null, null, null);
+
+  font-size: 2rem;
+}
+
+.u-main-text {
+}

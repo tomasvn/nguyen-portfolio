@@ -335,6 +335,7 @@ body {
   display: flex;
   height: 100vh;
   font-size: inherit;
+  font-family: "Playfair Display", serif;
   background-color: #051937;
   color: #fff;
 }
@@ -361,6 +362,23 @@ button {
 .o-nav-wrapper {
   height: 100vh;
   padding: 5px;
+}
+
+.o-section {
+  height: 75vh;
+  width: 100%;
+}
+
+.o-layout {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.o-layout--small {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-line {
@@ -497,4 +515,24 @@ button {
 .c-icon--mail {
   width: 36px;
   height: 34px;
+}
+
+.c-icon--wave {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+}
+
+.u-main-heading {
+  font-family: Axis, sans-serif;
+  font-size: 2.5rem;
+  color: #fdeb37;
+  text-align: center;
+  margin: 0;
+}
+
+.u-sub-title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }

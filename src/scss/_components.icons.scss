@@ -13,4 +13,10 @@
   &--mail {
     @include size(36px, 34px);
   }
+
+  &--wave {
+    @include size(36px, 36px);
+
+    margin-left: $global-sizing;
+  }
 }
