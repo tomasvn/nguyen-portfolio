@@ -1,5 +1,7 @@
 @import "settings.variables";
 
+@import "settings.mixins";
+
 @import "global.normalize";
 
 @import "global.general";
@@ -8,8 +10,8 @@
 
 @import "objects.layout";
 
-@import "components.icons";
-
 @import "components.menu";
+
+@import "components.icons";
 
 @import "utilities.headings";

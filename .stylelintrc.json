@@ -34,7 +34,7 @@
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
     "no-missing-end-of-source-newline": null,
-    "no-duplicate-selectors": true,
+    "no-duplicate-selectors": false,
     "selector-max-specificity": "0,4,0",
     "unit-whitelist": ["em", "rem", "px", "fr", "%", "vh", "s", "ms"]
   }

@@ -2,3 +2,11 @@
   width: $width;
   height: $height;
 }
+
+@mixin flex($align: null, $justify: null, $direction: null, $wrap: null) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}

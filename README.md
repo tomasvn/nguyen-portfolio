@@ -19,4 +19,5 @@
 - [x] Update JS file for menu
 
 ### v0.2
+- [ ] Add menu animation
 - [ ] Implementing sidebar [WIP]

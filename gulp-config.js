@@ -3,7 +3,7 @@ module.exports = {
     src: {
       imgFiles: './src/images/*.+(png|jpg|gif|svg)',
       stylesFiles: './src/scss/*.scss',
-      stylesOutput: './src/styles',
+      stylesOutput: './src',
       htmlFiles: './src/*.html',
       jsFiles: '.src/js/*.js',
       fontsFiles: '.src/fonts/**/*'

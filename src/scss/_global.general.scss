@@ -1,5 +1,4 @@
 html {
-  min-height: 100%;
   box-sizing: border-box;
   font-size: $global-font-size;
 }
@@ -12,9 +11,10 @@ html {
 
 body {
   display: flex;
-  height: inherit;
+  height: 100vh;
   font-size: inherit;
-  //background-color: $blue;
+  background-color: $blue;
+  color: $white;
 }
 
 ul {
