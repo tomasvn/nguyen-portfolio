@@ -1,22 +1,23 @@
 # Portfolio Page
 
-### Technical Stack
+## Technical Stack
 
 - HTML
 - SCSS (CSS)
 - JS
 - Gulp
 
-### Designs
+## Designs
 
-### Styleguide
+## Styleguide
 
-### Changelog
+## Changelog
 
-## v0.1
+### v0.1
 - [x] Restructure HTML
 - [x] Remove initial styling
 - [x] Update JS file for menu
 
-## v0.2
+### v0.2
 - [ ] Add menu animation
+- [ ] Implementing sidebar [WIP]
