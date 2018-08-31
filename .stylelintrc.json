@@ -37,6 +37,6 @@
     "no-duplicate-selectors": null,
     "declaration-empty-line-before": null,
     "selector-max-specificity": "0,4,0",
-    "unit-whitelist": ["em", "rem", "px", "fr", "%", "vh", "s", "ms"]
+    "unit-whitelist": ["em", "rem", "px", "fr", "%", "vh", "s", "ms", "vw"]
   }
 }

@@ -17,6 +17,7 @@
   position: relative;
   padding: $global-sizing;
   font-family: $axis;
+  border-right: 1px solid $yellow;
 
   // Size
   &__btn,
@@ -94,8 +95,7 @@
 }
 
 .c-menu-list {
-  @include size(100vw, 100%);
-
+  width: 100vw;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -123,7 +123,8 @@
   }
 
   .c-menu-inner-list {
-    margin-top: auto;
-    margin-bottom: ($global-sizing * 3);
+    @include flex(null, center, column, null);
+
+    min-height: 100vh;
   }
 }

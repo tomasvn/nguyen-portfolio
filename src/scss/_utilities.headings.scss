@@ -9,6 +9,10 @@
   text-align: center;
   margin: 0;
 
+  &--space-top {
+    padding-top: ($global-sizing * 5);
+  }
+
   &--playfair {
     display: block;
     font-family: $playfair;
@@ -26,7 +30,7 @@
 }
 
 .u-main-text {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: inherit;
 }

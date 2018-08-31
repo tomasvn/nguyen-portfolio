@@ -333,7 +333,6 @@ html {
 
 body {
   display: flex;
-  height: 100vh;
   background-color: #051937;
   font-family: "Playfair Display", serif;
   font-size: inherit;
@@ -380,13 +379,20 @@ button {
 
 .bg-section {
   width: 100%;
-  height: 100%;
-  clip-path: polygon(0% 0%, 0% 75%, 100% 58%, 100% 0%);
-  background-color: #fdeb37;
+  height: 50%;
+  background: url("images/section-bg.png") center center;
+  background-size: cover;
 }
 
 .full-section {
   height: 100vh;
+}
+
+.full-section--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .menu-line {
@@ -404,6 +410,7 @@ button {
   position: relative;
   padding: 10px;
   font-family: Axis, sans-serif;
+  border-right: 1px solid #fdeb37;
 }
 
 .c-menu__btn, .c-menu__close {
@@ -472,7 +479,6 @@ button {
 
 .c-menu-list {
   width: 100vw;
-  height: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -502,8 +508,10 @@ button {
 }
 
 .c-menu-list .c-menu-inner-list {
-  margin-top: auto;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .c-icon {
@@ -534,6 +542,7 @@ button {
 .c-icon--arrow {
   width: 14px;
   height: 78px;
+  margin-bottom: 30px;
   margin-left: 0;
 }
 
@@ -543,6 +552,10 @@ button {
   color: #fdeb37;
   text-align: center;
   margin: 0;
+}
+
+.u-main-heading--space-top {
+  padding-top: 50px;
 }
 
 .u-main-heading--playfair {

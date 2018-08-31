@@ -23,6 +23,7 @@
   &--arrow {
     @include size(14px, 78px);
 
+    margin-bottom: ($global-sizing * 3);
     margin-left: 0;
   }
 }
